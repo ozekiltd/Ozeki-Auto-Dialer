@@ -1,0 +1,118 @@
+﻿<UserControl x:Class="OPSAutoDialer.View.IVRSettinsUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Height="470"
+             d:DesignHeight="470"
+             d:DesignWidth="300"
+             Background="#dceadd">
+    <GroupBox Header="DTMF transfer">
+        <StackPanel>
+            <TextBlock Text="The call can be transfered to a live person if DTMF response is received."
+                       TextWrapping="Wrap"
+                       Margin="0,10"/>
+            <CheckBox Content="Transfer calls if DTMF response is received"
+                  IsChecked="{Binding AutoDialerConfig.IVRSettings.IVREnabled}"
+                  Margin="0,10"
+                  Name="chkBoxIVR"/>
+            <Grid IsEnabled="{Binding ElementName=chkBoxIVR, Path=IsChecked}">
+                <Grid.Resources>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                    </Style>
+                    <Style TargetType="{x:Type TextBox}">
+                        <Setter Property="Margin" Value="40,2"/>
+                    </Style>
+                </Grid.Resources>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="106*"/>
+                    <ColumnDefinition Width="182*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Keypad actions"
+                           VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1"
+                           Text="0"/>
+                <TextBlock Grid.Row="2"
+                           Text="1"/>
+                <TextBlock Grid.Row="3"
+                           Text="2"/>
+                <TextBlock Grid.Row="4"
+                           Text="3"/>
+                <TextBlock Grid.Row="5"
+                           Text="4"/>
+                <TextBlock Grid.Row="6"
+                           Text="5"/>
+                <TextBlock Grid.Row="7"
+                           Text="6"/>
+                <TextBlock Grid.Row="8"
+                           Text="7"/>
+                <TextBlock Grid.Row="9"
+                           Text="8"/>
+                <TextBlock Grid.Row="10"
+                           Text="9"/>
+                <TextBlock Grid.Row="11"
+                           Text="*"/>
+                <TextBlock Grid.Row="12"
+                           Text="#"/>
+                <TextBlock Grid.Column="1"
+                           Text="Phone numbers"
+                           VerticalAlignment="Center"
+                           Margin="44,12,54,12" />
+                <TextBox Grid.Column="1"
+                         Grid.Row="1"
+                         Text="{Binding AutoDialerConfig.IVRSettings.ZeroRedirection}"/>
+                <TextBox Grid.Column="1"
+                         Grid.Row="2"
+                         Text="{Binding AutoDialerConfig.IVRSettings.OneRedirection}"/>
+                <TextBox Grid.Column="1"
+                         Grid.Row="3"
+                         Text="{Binding AutoDialerConfig.IVRSettings.TwoRedirection}"/>
+                <TextBox Grid.Column="1"
+                         Grid.Row="4"
+                         Text="{Binding AutoDialerConfig.IVRSettings.ThreeRedirection}"/>
+                <TextBox Grid.Column="1"
+                         Grid.Row="5"
+                         Text="{Binding AutoDialerConfig.IVRSettings.FourRedirection}"/>
+                <TextBox Grid.Column="1"
+                         Grid.Row="6"
+                         Text="{Binding AutoDialerConfig.IVRSettings.FiveRedirection}"/>
+                <TextBox Grid.Column="1"
+                         Grid.Row="7"
+                         Text="{Binding AutoDialerConfig.IVRSettings.SixRedirection}"/>
+                <TextBox Grid.Column="1"
+                         Grid.Row="8"
+                         Text="{Binding AutoDialerConfig.IVRSettings.SevenRedirection}"/>
+                <TextBox Grid.Column="1"
+                         Grid.Row="9"
+                         Text="{Binding AutoDialerConfig.IVRSettings.EightRedirection}"/>
+                <TextBox Grid.Column="1"
+                         Grid.Row="10"
+                         Text="{Binding AutoDialerConfig.IVRSettings.NineRedirection}"/>
+                <TextBox Grid.Column="1"
+                         Grid.Row="11"
+                         Text="{Binding AutoDialerConfig.IVRSettings.StarRedirection}"/>
+                <TextBox Grid.Column="1"
+                         Grid.Row="12"
+                         Text="{Binding AutoDialerConfig.IVRSettings.HashRedirection}"/>
+            </Grid>
+        </StackPanel>
+    </GroupBox>
+</UserControl>

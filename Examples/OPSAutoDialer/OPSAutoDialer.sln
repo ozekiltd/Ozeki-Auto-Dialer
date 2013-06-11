@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OPSAutoDialer", "OPSAutoDialer\OPSAutoDialer.csproj", "{A990ED06-DBF9-43C8-97D9-DE2CC25D208D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OzCommon", "..\..\Common\OzCommon\OzCommon.csproj", "{421E2B8B-9427-4B84-B7D3-C46469F83333}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OzCommonBroadcasts", "..\..\Common\OzCommonBroadcasts\OzCommonBroadcasts.csproj", "{816C94D7-9EAA-4F51-AC5D-9ADC913146CB}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "Installer\Installer.vdproj", "{F941E3F2-E27D-4134-8DFA-1791FDF3B2A2}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A990ED06-DBF9-43C8-97D9-DE2CC25D208D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A990ED06-DBF9-43C8-97D9-DE2CC25D208D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A990ED06-DBF9-43C8-97D9-DE2CC25D208D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A990ED06-DBF9-43C8-97D9-DE2CC25D208D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{421E2B8B-9427-4B84-B7D3-C46469F83333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{421E2B8B-9427-4B84-B7D3-C46469F83333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{421E2B8B-9427-4B84-B7D3-C46469F83333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{421E2B8B-9427-4B84-B7D3-C46469F83333}.Release|Any CPU.Build.0 = Release|Any CPU
+		{816C94D7-9EAA-4F51-AC5D-9ADC913146CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{816C94D7-9EAA-4F51-AC5D-9ADC913146CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{816C94D7-9EAA-4F51-AC5D-9ADC913146CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{816C94D7-9EAA-4F51-AC5D-9ADC913146CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F941E3F2-E27D-4134-8DFA-1791FDF3B2A2}.Debug|Any CPU.ActiveCfg = Debug
+		{F941E3F2-E27D-4134-8DFA-1791FDF3B2A2}.Debug|Any CPU.Build.0 = Debug
+		{F941E3F2-E27D-4134-8DFA-1791FDF3B2A2}.Release|Any CPU.ActiveCfg = Release
+		{F941E3F2-E27D-4134-8DFA-1791FDF3B2A2}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

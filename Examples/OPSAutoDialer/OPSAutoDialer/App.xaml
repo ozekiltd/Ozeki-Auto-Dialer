@@ -1,0 +1,27 @@
+﻿<Application x:Class="OPSAutoDialer.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewModel="clr-namespace:OPSAutoDialer.ViewModel" xmlns:views="clr-namespace:OPSAutoDialer.View"
+             xmlns:taskbarNotification="clr-namespace:Hardcodet.Wpf.TaskbarNotification;assembly=Hardcodet.Wpf.TaskbarNotification">
+    
+    <Application.Resources>
+        <ResourceDictionary>
+            <DataTemplate DataType="{x:Type viewModel:SettingsViewModel}">
+                <views:SettingsUC/>
+            </DataTemplate>
+            
+            <Style x:Key="WindowIconStyle" TargetType="Window">
+                <Setter Property="Icon" Value="View\Resources\broadcast_autodialer.ico"/>
+            </Style>
+            
+            <Style x:Key="AppImageStyle" TargetType="Image">
+                <Setter Property="Source" Value="View\Resources\broadcast_autodialer.ico"/>
+            </Style>
+
+            <Style x:Key="AppTaskbarIconStyle" TargetType="taskbarNotification:TaskbarIcon">
+                <Setter Property="IconSource" Value="View\Resources\broadcast_autodialer.ico"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+    
+</Application>
